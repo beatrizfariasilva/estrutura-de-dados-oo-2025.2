@@ -8,6 +8,7 @@ int main(){
     cout<<"Programa gerador de Hash's!\n";
     cout<<"Digite a capacidade da Hash\n";
     cin>>length;
+
     cout<<"Digite o número máximo de elementos permitidos na Hash\n";
     cin>>max_itens;
     cout<<"O fator de carga é: "<<(float)max_itens/(float)length;
@@ -19,7 +20,9 @@ int main(){
     bool busca;
 
     do{
-        cout<<"Escolha uma opção de 0 a 4\n";
+        cout << "Escolha uma opção de 0 a 4\n";
+        cin >> opcao;
+
 
         if (opcao==1){
             cout<<"Digite o RA do novo aluno\n";
